@@ -84,6 +84,10 @@ class Game {
     }
 
     drawMap(ctx, x, y) {
+        
+        ctx.imageSmoothingEnabled = false;
+        ctx.webkitImageSmoothingEnabled = false;
+        ctx.mozImageSmoothingEnabled = false;
 
         if(!this.image)
             return;
